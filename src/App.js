@@ -6,8 +6,8 @@ function App() {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const resultsPerPage = 10; // Adjust this for batch size
-      const maxPages = 5; // Adjust based on the expected number of pages
+      const resultsPerPage = 10;
+      const maxPages = 5;
       let allUsers = [];
 
       for (let page = 1; page <= maxPages; page++) {
@@ -42,7 +42,6 @@ function App() {
         <h1 className="text-4xl font-bold"> </h1>
       </header>
 
-      {/* User Cards Section */}
       <div className="container text-center mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 mt-10">
         {users.map((user, index) => (
           <div
